@@ -70,7 +70,7 @@ header
     height: 14px;
     width: 13px;
     vertical-align: middle;
-    background: url('../img/login-img.png');
+    background: url('/html_site/img/login-img.png');
     margin-right: 8px;
 }
 .btn-login img {
@@ -87,7 +87,7 @@ header
     margin: 30px auto 50px; 
 }
 .banner{
-    background: url('../img/header_banner.png') 100% no-repeat;
+    background: url('/html_site/img/header_banner.png') 100% no-repeat;
     height: 834px;
     background-size: cover;
     color: #ffffff;
