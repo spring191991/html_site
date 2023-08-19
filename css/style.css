@@ -1,0 +1,263 @@
+html,
+body {
+  height: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    width:100%;
+    margin:0;
+    font-size:12px;
+}
+.wrapper{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+header
+{
+    opacity: 0.902;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 100;
+}
+.header{
+    width: 960px;
+    margin: 20px auto;
+}
+.menu
+{
+    margin:0 20px;
+    padding:0;
+    list-style:none; 
+    width:400px;
+    display:flex;
+    float: right;
+}
+.menu li
+{
+    flex: 1 0 auto;
+    text-align: center;
+}
+.login {
+    float: right;
+}
+.link_menu
+{
+    opacity: 0.749;
+    font-size: 17px;
+    color: #454545;
+    font-weight: 400;
+    text-decoration: none;
+}
+.link_menu:hover
+{
+    color: #e70c0a;
+}
+.btn-login{
+    width: 87px;
+    height: 27px;
+    border-radius: 3px;
+    background-color: #de6d6e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-login:before {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 13px;
+    vertical-align: middle;
+    background: url('../img/login-img.png');
+    margin-right: 8px;
+}
+.btn-login img {
+    margin-right: 10px;
+}
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 310px;
+}
+.wrapper__line, .sections
+{
+    width: 960px;
+    margin: 30px auto 50px; 
+}
+.banner{
+    background: url('../img/header_banner.png') 100% no-repeat;
+    height: 834px;
+    background-size: cover;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    filter: drop-shadow(0 0 6.5px rgba(0,0,0,0.22));
+    border: 1px solid #fff;
+}
+h1{
+    font-size: 69px;
+    text-transform: uppercase;
+    padding-top: 450px;
+}
+.h1-text{
+    font-size: 25px;
+}
+.top-text{
+    text-align: center;
+}
+.top-text h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+.top-text .h2-text{
+    font-size: 17px;
+    color: #636363;
+}
+.wrapper__icons {
+    display: flex;
+}
+.icons {
+    flex: 1 0 auto;
+}
+.icons{
+    border-radius: 100px;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    width: fit-content;
+}
+.icons1{
+    background-color: #4db9f3;
+}
+.icons2{
+    background-color: #6fc125;
+}
+.icons3{
+    background-color: #ff5549;
+}
+.icons4{
+    background-color: #e38f23;
+}
+.icons:hover .icons-img{
+    opacity: 0.259;
+}
+.icons-img p{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 400;
+    position: absolute;
+    margin: 0px 23px;
+}
+.icons-text{
+    display: none;
+    width: 100px;
+    height: 87px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    position: absolute;
+}
+.icons:hover .icons-text{
+    display: block;
+}
+.news p{
+    font-size: 15px;
+    line-height: 22px;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+.news .news__title{
+    font-size: 27px;
+    color: #404040;
+    font-weight: 400;
+}
+.news img {
+    float: left;
+    padding-right: 20px;
+}
+.footer{
+    background:#2a2b2a;
+    min-height: 300px;
+    margin-top: -300px;
+}
+.sections{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+.section ul{
+    list-style:none;
+    padding: 0;
+}
+.section h5{
+    font-size: 21px;
+    line-height: 22px;
+    color: #aeaeae;
+    font-weight: 400;
+}
+.section ul li a{
+    font-size: 15px;
+    line-height: 22px;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+.social{
+    list-style: none;
+    display: flex;
+    margin: 30px auto 0;
+    padding: 0px;
+}
+ul.social li {
+    padding: 15px;
+}
+
+ul.social li a {
+    background: #696b69;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.copyright{
+    color: #8b8b8b;
+    text-align: center;
+}
+
+@media(max-width:960px){
+    .wrapper__line, .sections, .header {
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
+    }
+    .wrapper__icons {
+        display: block;
+    }
+    .icons {
+        display: inline-block;
+        margin: 20px 20px;
+    }
+    footer .section {
+        width: 25%;
+    }
+    .footer__right{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .news img {
+        float: none;
+        width: auto;
+    }
+    .btn-login {
+        margin: 10px;
+    }
+}
